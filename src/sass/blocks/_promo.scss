@@ -1,0 +1,48 @@
+.promo {
+	min-height: 680px;
+	padding: 23px 0 82px 0;
+	background: url(../img/bg/sec1_bg.png) center (center/cover) no-repeat;
+	&__wrapper {
+		margin-top: 9px;
+		text-align: center;
+	}
+	&__firm {
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	&__header {
+		margin-top: 26px;
+		color: $col1;
+		font-family: "Roboto Condensed";
+		font-size: 72px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__subheader {
+		margin-top: 9px;
+		color: #ffffff;
+		font-family: "Roboto Condensed";
+		font-size: 42px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	&__hr {
+		margin-top: 38px;
+	}
+	&__icons {
+		margin-top: 27px;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 22px;
+	}
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
