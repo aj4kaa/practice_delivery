@@ -23,4 +23,16 @@
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+	&_price {
+		margin-top: 25px;
+		
+	}
+	&_price-bot {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -22px;
+		width: 180px;
+		height: 45px;
+	}
 }
