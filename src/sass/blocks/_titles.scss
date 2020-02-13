@@ -4,4 +4,16 @@
 	font-size: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	&_hr {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 148px;
+			border-bottom: 1px solid $col1;
+		}
+	}
 }
