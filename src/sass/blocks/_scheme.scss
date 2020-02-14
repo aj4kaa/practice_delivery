@@ -1,0 +1,32 @@
+.scheme {
+	min-height: 454px;
+	background-color: #f3f3f3;
+	padding: 51px 0 46px 0;
+	text-align: center;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 29px;
+	}
+	&__item {
+		margin: 0 7px 0 7px;
+		max-width: 257px;
+	}
+	&__icon {
+		min-height: 57px;
+	}
+	&__descr {
+		color: #3a3a3a;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 20px;
+		span {
+			color: #ec644b;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 30px;
+		}
+	}
+}
