@@ -1,9 +1,18 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/fonts";
 @import "base/vars";
+@import "base/animation";
 
 * {
 	font-family: 'Roboto', sans-serif;
+}
+
+input {
+	outline: none;
+}
+
+button:active, button:focus {
+	outline: none;
 }
 
 .container {
@@ -11,6 +20,7 @@
 	max-width: 1141px;
 	margin: 0 auto;
 }
+
 a:hover {
 	text-decoration: none;
 	color: $col1;
@@ -34,4 +44,5 @@ h1, h2, h3 {
 @import "blocks/company";
 @import "blocks/price";
 @import "blocks/scheme";
-@import "blocks/_reviews";
+@import "blocks/reviews";
+@import "blocks/airplane";

@@ -1,11 +1,77 @@
 .reviews {
-	min-height: 470px;
+	max-height: 470px;
 	padding: 51px 0 65px 0;
+	text-align: center;
+	>.container {
+		max-width: 1412px;
+	}
 	&__subtitle {
 		margin-top: 38px;
 		text-align: center;
 		color: #2e2e2e;
 		font-size: 21px;
 		font-weight: 300;
+	}
+	&__wrapper {
+		margin-top: 31px;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		.active {
+			left: 29%;
+			position: absolute;
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	&__item {
+		padding: 0 40px 0 40px;
+		position: relative;
+		width: 600px;
+		opacity: .3;
+		transition: 2s opacity;
+		transform: scale(.5);
+	}
+	&__img {
+		margin: 0 auto;
+		width: 114px;
+		height: 114px;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+	&__text {
+		margin-top: 19px;
+		color: #3a3a3a;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		span {
+			line-height: 32px;
+			font-size: 18px;
+			font-weight: 700;
+
+		}
+	}
+	&__next {
+		cursor: pointer;
+		height: 47px;
+		width: 14px;
+		background: url(../img/icons/sec8_sl1.png) center (center/cover) no-repeat;
+		position: absolute;
+		left: 41%;
+		top: 10%;
+	}
+	&__prev {
+		cursor: pointer;
+		height: 47px;
+		width: 14px;
+		background: url(../img/icons/sec8_sl2.png) center (center/cover) no-repeat;
+		position: absolute;
+		left: 57%;
+		top: 10%;
 	}
 }
