@@ -1,0 +1,99 @@
+.footer {
+	max-height: 201px;
+	background-color: #25333c;
+	padding: 24px 0 28px 0;
+	&__wrapper {
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		width: 68px;
+		img {
+			width: 100%;
+		}
+	}
+	&__menu {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+		}
+	}
+	&__links {
+		min-width: 600px;
+		padding: 0;
+	}
+	&__link {
+		position: relative;
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 500;
+		transition: .2s all;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			border-bottom: 1px solid $col1;
+			transform: scaleX(0);
+			transition: .2s all;
+		}
+		&:hover:before {
+			transform: scaleX(1);
+			color: $col1;
+		}
+	}
+	&__contacts {
+		flex-direction: column;
+		text-align: right;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	&__phone {
+		color: #ffffff;
+		font-size: 19px;
+		font-weight: 700;
+		transition: .3s all;
+	}
+	&__hr {
+		margin-top: 26px;
+		width: 1171px;
+		border-top: 1px solid;
+		opacity: 0.3;
+	}
+	&__bottom-text {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__year {
+		opacity: 0.6;
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: 300;
+	}
+	&__conf {
+		a {
+			color: #ec644b;
+			font-size: 13px;
+			font-weight: 300;
+			text-decoration: none;
+		}
+	}
+	&__creat {
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: 300;
+		span {
+			opacity: 0.6;
+		}
+		img {
+			opacity: 0.78;
+			margin-left: 10px;
+		}
+	}
+}

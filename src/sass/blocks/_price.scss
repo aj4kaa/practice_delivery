@@ -1,9 +1,12 @@
 .price {
-	min-height: 952px;
+	height: 952px;
 	padding: 53px 0 58px 0;
 	text-align: center;
+	> .container > h2::before {
+		bottom: -5px;
+	}
 	&__subtitle {
-		margin-top: 38px;
+		margin-top: 10px;
 		text-align: center;
 		color: #2e2e2e;
 		font-size: 21px;
@@ -54,7 +57,7 @@
 		flex-wrap: wrap;
 	}
 	&__consultation {
-		margin-top: 56px;
+		margin-top: 40px;
 		color: #3a3a3a;
 		font-size: 28px;
 		font-weight: 500;

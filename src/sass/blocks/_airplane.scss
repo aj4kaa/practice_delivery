@@ -1,6 +1,6 @@
 .airplane {
 	text-align: center;
-	min-height: 438px;
+	max-height: 438px;
 	padding: 62px 0 79px 0;
 	background: url(../img/bg/sec9_bg.png);
 	&__title {
@@ -24,6 +24,7 @@
 		display: none;
 	}
 	button {
+		padding-top: 3px;
 		position: relative;
 		left: 0;
 		bottom: 0;
