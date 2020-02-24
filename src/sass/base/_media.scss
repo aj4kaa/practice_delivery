@@ -1,0 +1,203 @@
+@media (max-width: 1200px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+	.feed-form {
+		flex-direction: column;
+		&_img {
+			top:-56%;
+		}
+		input {
+			width: 250px;
+			height: 40px;
+			margin-top: 15px;
+		}
+	}
+	.feed-form-air {
+		input {
+			width: auto;
+		}
+	}
+	.title {
+		font-size: 22px;
+	}
+	.header {
+		flex-wrap: wrap;
+		button {
+			margin: 20px auto;
+		}
+	}
+	.header__menu {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width:70%;
+		height: 100vh;
+		background-color: rgba(0,0,0,.7);
+		transition: 1s all;
+		.header__links {
+			height: 100vh;
+			min-width: auto;
+			flex-direction: column;
+			justify-content: center;
+			li {
+				margin-top: 25px;
+			}
+		}
+	}
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: -10px;
+		width: 26px;
+		span {
+			transition: 1s all;
+			border-radius: 10px;
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			margin-bottom: 2px;
+		}
+	}
+	.hamactive {
+		left: 0;
+	}
+	.hamanimate {
+		span {
+			margin-bottom: -2px;
+			&:nth-child(1) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+				transform: rotate(145deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(45deg);
+			}
+		}
+
+	}
+	.promo {
+		max-height: none;
+		padding: 20px;
+		&__icons {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__firm {
+			font-size: 20px;
+		}
+		&__header {
+			font-size: 30px;
+		}
+		&__subheader {
+			font-size: 20px;
+		}
+		&__icon {
+			margin-top: 20px;
+		}
+	}
+	.advantages {
+		padding: 15px;
+		max-height: none;
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&__col:last-child {
+			margin-left: 0;
+		}
+		&__item {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&__descr {
+			width: 75%;
+		}
+	}
+	.tagline {
+		padding: 15px;
+		max-height: none;
+		&__subtitle {
+			font-size: 18px;
+		}
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			width: 75%;
+		}
+		&__img {
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+	.company {
+		background-size: cover;
+		background-position: center;
+		max-height: none;
+		padding: 15px;;
+	}
+	.price {
+		padding: 15px;
+		max-height: none;
+		&__subtitle {
+			font-size: 18px;
+		}
+		&__wrapper {
+			align-items: center;
+			justify-content: space-around;
+		}
+	}
+	.scheme {
+		max-height: none;
+	}
+	.reviews {
+		max-height: none;
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__item, .active {
+			width: 100%;
+			position: relative;
+			left: 0;
+			transform: none;
+		}
+	}
+	.airplane {
+		max-height: none;
+		&__title {
+			width: 100%;
+		}
+	}
+	.footer {
+		max-height: none;
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&__menu {
+			display: none;
+		}
+		&__hr {
+			width: 100%;
+		}
+		&__links {
+			width: 100%;
+		}
+	}
+}
+
+// @media (max-width: 575px) {
+
+// }
